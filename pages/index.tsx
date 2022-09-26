@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -14,11 +15,15 @@ const Home: NextPage = () => {
         <h1 className="text-4xl">Opdracht Voertuigtechniek MRV1F 2022-2023</h1>
         <li className="list-none flex space-x-3 text-xl">
           <ul className="hover:underline cursor-pointer">
-            <a href="/opdracht1">Opdracht 1</a>
+            <Link href="/opdracht-1">
+              <a>Opdracht 1</a>
+            </Link>
           </ul>
           <ul>|</ul>
           <ul className="hover:underline cursor-pointer">
-            <a href="/opdracht2">Opdracht 2</a>
+            <Link href="/opdracht-2">
+              <a>Opdracht 2</a>
+            </Link>
           </ul>
         </li>
         <div></div>
